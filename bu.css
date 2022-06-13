@@ -1,0 +1,109 @@
+.mySlides{
+ display: none;
+}
+
+.bu-page-padding{
+ padding-top:67px!important;
+ padding-bottom:67px!important;
+}
+
+.bu-green{
+ color:#000;
+ background-color:#0c4;
+}
+.bu-blue{
+ color:#007;
+ background-color:#06c;
+}
+.bu-orange{
+ color:#f90;
+ background-color:#333;
+}
+
+.bu-blue-text{
+ color:#00a;
+}
+
+.bu-orange-text{
+ color:#f90;
+}
+
+.bu-ukrain-blue
+{color:#fff;background-color:#05b}
+.bu-ukrain-yellow,.bu-hover-ukrain-yellow:hover
+{color:#000!important;background-color:#fc0!important;}
+.bu-ukrain-blue-text
+{color:#05b!important;}
+.bu-ukrain-yellow-text
+{color:#fc0!important;}
+
+.bu-img{
+ border-radius: 6px;
+ height: 140px;
+ padding: 3px 1px!important;
+}
+
+.marquee {
+ height: 30px;
+ width: 100%;
+ overflow: hidden;
+ position: relative;
+ border: 1px solid orange;
+}
+.marquee p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ white-space: nowrap;
+ /* Starting position */
+ -moz-transform:translateX(100%);
+ -webkit-transform:translateX(100%);
+ transform:translateX(100%);
+ /* Apply animation to this element */
+ -moz-animation: scroll-left 15s linear infinite;
+ -webkit-animation: scroll-left 15s linear infinite;
+ animation: scroll-left 15s linear infinite;
+}
+/* Move it (define the animation) */
+@-moz-keyframes scroll-left {
+ 0%   { -moz-transform: translateX(100%); }
+ 100% { -moz-transform: translateX(-100%); }
+}
+@-webkit-keyframes scroll-left {
+ 0%   { -webkit-transform: translateX(100%); }
+ 100% { -webkit-transform: translateX(-100%); }
+}
+@keyframes scroll-left {
+ 0%   {
+ -moz-transform: translateX(100%); /* Browser bug fix */
+ -webkit-transform: translateX(100%); /* Browser bug fix */
+ transform: translateX(100%);
+ }
+ 100% {
+ -moz-transform: translateX(-100%); /* Browser bug fix */
+ -webkit-transform: translateX(-100%); /* Browser bug fix */
+ transform: translateX(-100%);
+ }
+}
+
+#topButton {
+ display: block;
+ position: fixed;
+ bottom: 20px;
+ right: 30px;
+ z-index: 99;
+ font-size: 16px;
+ border: none;
+ outline: none;
+ color: white;
+ background-color: black;
+ cursor: pointer;
+ padding: 12px;
+ border-radius: 4px;
+}
+
+#topButton:hover {
+ color: black;
+ background-color: #f90;
+}

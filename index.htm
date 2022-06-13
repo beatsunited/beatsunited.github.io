@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <title>beats united</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-win8.css">
+  <link rel="stylesheet" href="bu.css">
+  <link rel="icon" href="bu.ico">
+  <script src="slideshow.js"></script>
+  <script src="more.js"></script>
+</head>
+
+<!-- Main body -->
+<body class="w3-sans-serif w3-large bu-ukrain-yellow">
+
+<button onclick="topFunction()" id="topButton" title="Go to top">^up</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar bu-ukrain-blue w3-card">
+    <a class="w3-bar-item w3-button w3-padding w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="toggle_nav_menu()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#"         class="w3-bar-item w3-button w3-padding w3-border-right bu-hover-ukrain-yellow"><i class="fa fa-home"></i></a>
+    <a href="#band"     class="w3-bar-item w3-button w3-padding w3-border-right bu-hover-ukrain-yellow">Band</a>
+    <a href="#kontakt"  class="w3-bar-item w3-button w3-padding w3-border-right bu-hover-ukrain-yellow">Kontakt</a>
+    <a href="#gigs"     class="w3-bar-item w3-button w3-padding w3-border-right bu-hover-ukrain-yellow">Gigs</a>
+    <a href="#songs"    class="w3-bar-item w3-button w3-padding w3-border-right bu-hover-ukrain-yellow">Songs</a>
+    <a href="#pics"     class="w3-bar-item w3-button w3-padding w3-border-right bu-hover-ukrain-yellow">Pics</a>
+
+    <!-- Dropdown -->
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding w3-button bu-hover-ukrain-yellow" title="More">&#9776;</button>
+      <div class="w3-dropdown-content w3-bar-block bu-ukrain-blue w3-card-4">
+        <a href="#logo"       class="w3-bar-item w3-button w3-border-bottom bu-hover-ukrain-yellow">Logo</a>
+        <a href="#links"      class="w3-bar-item w3-button w3-border-bottom bu-hover-ukrain-yellow">Links</a>
+        <a href="#demos"      class="w3-bar-item w3-button w3-border-bottom bu-hover-ukrain-yellow">Demos</a>
+        <a href="#chronik"    class="w3-bar-item w3-button w3-border-bottom bu-hover-ukrain-yellow">Chronik</a>
+        <a href="#impressum"  class="w3-bar-item w3-button w3-border-bottom bu-hover-ukrain-yellow">Impressum</a>
+        <a href="#referenzen" class="w3-bar-item w3-button w3-border-bottom bu-hover-ukrain-yellow">Referenzen</a>
+        <a href="#pressetext" class="w3-bar-item w3-button bu-hover-ukrain-yellow">Pressetext</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block bu-ukrain-blue w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band"       class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Band</a>
+  <a href="#gigs"       class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Gigs</a>
+  <a href="#logo"       class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Logo</a>
+  <a href="#links"      class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Links</a>
+  <a href="#demos"      class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Demos</a>
+  <a href="#chronik"    class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Chronik</a>
+  <a href="#kontakt"    class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Kontakt</a>
+  <a href="#impressum"  class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Impressum</a>
+  <a href="#referenzen" class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Referenzen</a>
+  <a href="#pressetext" class="w3-bar-item w3-button w3-padding bu-hover-ukrain-yellow" onclick="toggle_nav_menu()">Pressetext</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:100%;">
+
+  <!-- NEWS Section -->
+  <div class="w3-container w3-content w3-center" style="max-width:700px" id="home">
+  <div class="marquee">
+    <p>
+      Breaking News
+      &nbsp; - - - &nbsp;
+      2022 Gig plans in progress
+      &nbsp; - - - &nbsp;
+      New Songs coming up, see below
+      &nbsp; - - - &nbsp;
+      Ukrainian website theme, guess why
+      &nbsp; - - - &nbsp;
+      Breaking News
+      &nbsp; - - - &nbsp;
+    </p>
+  </div>
+
+  </div>
+
+  <!-- HOME Section -->
+  <div class="w3-container w3-content w3-center bu-page-padding" style="max-width:600px" id="home">
+    <h1 class="w3-wide"><i>beats united</i></h1>
+    <p class="w3-opacity"><i>The City never sleeps and the party never ends!</i></p>
+    <p class="w3-justify">
+      Auf diesen Nenner bringen es die sechs Musiker der Cover-Band
+      <i><b>beats united</b></i>
+      , wenn sie auf der B&uuml;hne Pop-, Rock-, Punk- und Funk-Kracher der
+      letzten 30 Jahre knallen lassen. Ganz nah am Original und dennoch immer
+      mit einem Schuss
+      <i><b>beats united</b></i>-Style
+      , denn bei jedem St&uuml;ck sp&uuml;rt man den Spa&szlig;,
+      die Musikalit&auml;t und die Live-Erfahrung der sechs Musiker aus
+      M&uuml;nchen und Umgebung. Ob jung, ob alt, f&uuml;r Partystimmung
+      ist auf jeden Fall bestens gesorgt!
+    </p>
+    <p class="w3-justify">
+     &xrArr; <a href="#pressetext">weiter unten gibt's den ausf&uuml;hrlichen Pressetext</a>
+    </p>
+  </div>
+
+  <!-- GIGS Section -->
+  <div class="bu-ukrain-blue">
+  <div class="w3-container w3-content bu-page-padding" style="max-width:800px" id="gigs">
+    <h2 class="w3-wide w3-center">Gigs 2022</h2>
+    <p>
+      Corona bedingt beginnen Veranstalter ab 2022 wieder vermehrt Events zu planen.
+      <br>
+      Daher sind bei uns auch noch einige Termine f&uuml;r Veranstaltungen frei.
+      <br>
+      Wir freuen uns auf Angebote.
+    </p>
+    <p>
+      Hier eine Auswahl kommender Termine..
+    </p>
+    <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+
+      <div class="w3-third w3-margin-bottom">
+        <img src="rainer_live_munich.jpg" alt="Ammersee" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container bu-ukrain-yellow">
+          <p><b>M&uuml;nchen</b></p>
+          <p class="w3-opacity">20.Mai 2022</p>
+          <p>Private Veranstaltung</p>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <img src="ammersee.jpg" alt="Ammersee" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container bu-ukrain-yellow">
+          <p><b>Aichach</b></p>
+          <p class="w3-opacity">08.Juli 2022</p>
+          <p>Private Veranstaltung</p>
+        </div>
+      </div>
+
+      <div class="w3-third w3-margin-bottom">
+        <img src="augsburg_ratskeller.jpg" alt="Ammersee" style="width:100%" class="w3-hover-opacity">
+        <div class="w3-container bu-ukrain-yellow">
+          <p><b>Augsburg</b></p>
+          <p class="w3-opacity">02.September 2022</p>
+          <p>Private Veranstaltung</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </div>
+
+  <!-- BAND Section -->
+  <div class="w3-container w3-content w3-center bu-page-padding" style="max-width:700px" id="band">
+    <h2 class="w3-wide">The Band</h2>
+    <p>
+      So oder so &auml;hnlich stehen wir auf der gro&szlig;en Showb&uuml;hne
+    </p>
+    <p>
+      <img src="band.jpg" class="w3-round w3-image" alt="beats united live on stage">
+    </p>
+    <p class="w3-small">
+      Tex (vocals)
+      ·
+      Ray (bass)
+      ·
+      Joe (drums)
+      ·
+      Ingo (keys)
+      ·
+      Andi (git)
+      ·
+      Jan (git)
+    </p>
+  </div>
+
+  <!-- REFERENZEN Section -->
+  <div class="bu-ukrain-blue">
+  <div class="w3-container w3-content w3-center bu-page-padding" style="max-width:800px" id="referenzen">
+    <h2 class="w3-wide">Referenzen</h2>
+    <h4 class="w3-text-amber">M&uuml;nchen</h4>
+      <p>
+        Airbr&auml;u
+        <br>
+        Bar Centrale --- Barcode --- Beach 38
+        <br>
+        FOS
+        <br>
+        Hard Rock Cafe
+        <br>
+        Infratest
+        <br>
+        Loft
+        <br>
+        Murphy's
+        <br>
+        Oly-Fasching
+        <br>
+        Peppermint Lounge --- Podium
+        <br>
+        Rock Garage
+        <br>
+        Schwabinger Altstadtfest --- Siemens
+        <br>
+        Spectaculum Mundi --- Streetlife
+        <br>
+        Tollwood --- TV München
+      </p>
+    <h4 class="w3-text-amber">Bayern</h4>
+      <p>
+        Ansbach --- Attaching --- Augsburg
+        <br>
+        Bad Endorf --- Benediktbeuern
+        <br>
+        Dachau
+        <br>
+        Erding
+        <br>
+        Freising --- FFB
+        <br>
+        Garching --- GAP --- Gungolding
+        <br>
+        Herrsching --- Hohenbercha
+        <br>
+        Landshut --- Langenpreising
+        <br>
+        Maisach --- Moosburg --- MUC --- M
+        <br>
+        Neuburg a. d. Donau
+        <br>
+        Olching
+        <br>
+        Regensburg
+        <br>
+        Straubing
+        <br>
+        Unterhaching
+        <br>
+        Wartenberg
+      </p>
+    <h4 class="w3-text-amber">Deutschland</h4>
+      <p>
+        Friedrichshafen
+        <br>
+        Heiligenberg
+        <br>
+        Schw&auml;bisch Hall
+        <br>
+        Mainz
+      </p>
+  </div>
+  <br>
+  <div class="w3-container w3-content w3-center" style="max-width:800px">
+    <p><i>"ihr Jungs seid der Wahnsinn"</i> (Hochzeit, Freising)</p>
+    <p><i>"beste Band, die je hier gespielt hat"</i> (Burle, Bar Centrale, M&uuml;nchen)</p>
+    <p><i>"Das Beste in 15 Jahren Kneipenfestival"</i> (Barkeeper, Lagerhaus, Schongau)</p>
+    <p><i>"die Musik ist super, die Stimmung kocht"</i> (Heidi, Hard Rock Cafe, M&uuml;nchen)</p>
+    <p><i>"das Beste was wir hier in diesem Ort je hatten"</i> (Gast, Langenpreising)</p>
+    <p><i>"wieso spielt ihr keine Weihnachtslieder?"</i> (Bedienung, Airbr&auml;u, MUC)<br><span class="bu-orange-text w3-medium">Tja, warum wohl nicht?!</span></p>
+    <p><i>"Rock + Pop Songs verpackt in eine coole Show"</i> (Filmb&uuml;hne Regensburg)</p>
+  </div>
+  </div>
+
+  <!-- PICS Section -->
+  <div class="w3-container w3-content w3-center bu-page-padding" id="pics">
+    <h2 class="w3-wide">Bilder Galerie</h2>
+    <p>
+      Links-Klick auf die Bilder zum Vergr&ouml;&szlig;ern,
+      <br>
+      Rechts-Klick zum Speichern.
+    </p>
+    <a href="galerie/20050402-083641_.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                             src="galerie/20050402-083641_.jpg"/></a>
+    <a href="galerie/20070119_Munich_Murphys_Pub_Olli.jpg" target="_blank"><img class="bu-img w3-hover-opacity"             src="galerie/20070119_Munich_Murphys_Pub_Olli.jpg"/></a>
+    <a href="galerie/20051113-132130_band_photo_shooting.jpg" target="_blank"><img class="bu-img w3-hover-opacity"          src="galerie/20051113-132130_band_photo_shooting.jpg"/></a>
+    <a href="galerie/20071103_Augsburger_Ratskeller_Andi.jpg" target="_blank"><img class="bu-img w3-hover-opacity"          src="galerie/20071103_Augsburger_Ratskeller_Andi.jpg"/></a>
+    <a href="galerie/20150606-222533_Jan_singing.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                  src="galerie/20150606-222533_Jan_singing.jpg"/></a>
+    <a href="galerie/20051113_band_photo_shooting.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                 src="galerie/20051113_band_photo_shooting.jpg"/></a>
+    <a href="galerie/2012_Jan_live_on_stage.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                       src="galerie/2012_Jan_live_on_stage.jpg"/></a>
+    <a href="galerie/2009_Munich_Oly_Fasching.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                     src="galerie/2009_Munich_Oly_Fasching.jpg"/></a>
+    <a href="galerie/20150606-230400_bye_bye.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                      src="galerie/20150606-230400_bye_bye.jpg"/></a>
+    <a href="galerie/20041016-231826_Olli_Williams.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                src="galerie/20041016-231826_Olli_Williams.jpg"/></a>
+    <a href="galerie/2012_Augsburg_Thorbraeu.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                      src="galerie/2012_Augsburg_Thorbraeu.jpg"/></a>
+    <a href="galerie/20141108_Augsburg_Riegele_Honkytonk.jpg" target="_blank"><img class="bu-img w3-hover-opacity"          src="galerie/20141108_Augsburg_Riegele_Honkytonk.jpg"/></a>
+    <a href="galerie/20150214-015656_frontmen.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                     src="galerie/20150214-015656_frontmen.jpg"/></a>
+    <a href="galerie/20041016_Regensburg_Filmbuehne_Ingo_peace.jpg" target="_blank"><img class="bu-img w3-hover-opacity"    src="galerie/20041016_Regensburg_Filmbuehne_Ingo_peace.jpg"/></a>
+    <a href="galerie/20150606-223128_everybody.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                    src="galerie/20150606-223128_everybody.jpg"/></a>
+    <a href="galerie/20141109-004038_all_clapping_hands.jpg" target="_blank"><img class="bu-img w3-hover-opacity"           src="galerie/20141109-004038_all_clapping_hands.jpg"/></a>
+    <a href="galerie/20150606_Andi_Olli_posing.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                    src="galerie/20150606_Andi_Olli_posing.jpg"/></a>
+    <a href="galerie/20110917_GAP_wedding.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                         src="galerie/20110917_GAP_wedding.jpg"/></a>
+    <a href="galerie/20150606_band_posing_on_stage_before_encore.jpg" target="_blank"><img class="bu-img w3-hover-opacity"  src="galerie/20150606_band_posing_on_stage_before_encore.jpg"/></a>
+    <a href="galerie/20150606-203219_band_on_stage.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                src="galerie/20150606-203219_band_on_stage.jpg"/></a>
+    <a href="galerie/2012_Wartenberger_Rocknacht.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                  src="galerie/2012_Wartenberger_Rocknacht.jpg"/></a>
+    <a href="galerie/20150606_Munich_StuStaCulum.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                  src="galerie/20150606_Munich_StuStaCulum.jpg"/></a>
+    <a href="galerie/20141018_Schongau_Andi.jpg" target="_blank"><img class="bu-img w3-hover-opacity"                       src="galerie/20141018_Schongau_Andi.jpg"/></a>
+    <a href="galerie/20150606_Munich_StuStaCulum_Ray.jpg" target="_blank"><img class="bu-img w3-hover-opacity"              src="galerie/20150606_Munich_StuStaCulum_Ray.jpg"/></a>
+  </div>
+
+  <!-- SONGS Section -->
+  <!--
+  <div style="background-color:#777;">
+  -->
+  <div class="w3-dark-gray">
+  <div class="w3-container w3-content bu-page-padding" style="max-width:640px" id="songs">
+    <h2 class="w3-wide w3-center">Songliste</h2>
+    <p class="w3-text-cyan w3-center">Neue Titel sind farbig in blau markiert.</p>
+    <p class="w3-text-orange w3-center">Gelb markierte Titel gibt es als Demos.</p>
+    <ol class="w3-ol">
+      <li>5 Seconds Of Summer - Hey Everybody</li>
+      <li>AC/DC - Highway To Hell</li>
+      <li>Aerosmith - Walk This Way</li>
+      <li>Alan Parsons Project - Sirius</li>
+      <li>Andreas Bourani - Auf Uns</li>
+      <li>Beastie Boys - Fight For Your Right</li>
+      <li>Beatles - Back In The USSR</li>
+      <li class="w3-text-cyan">Billy Idol - Eyes Without A Face (neu)</li>
+      <li class="w3-text-orange">Billy Idol - Rebel Yell (demo)</li>
+      <li class="w3-text-orange">Billy Idol - White Wedding (demo)</li>
+      <li>Bl&auml;ck F&ouml;&ouml;ss - Wickie</li>
+      <li>Black Crowes - Too Hard To Handle [orig. Otis Redding]</li>
+      <li>Black Keys - Lonley Boy</li>
+      <li>Blink 182 - All The Small Things</li>
+      <li>Bloc Party - Banquet</li>
+      <li>Bloodhound Gang - Along Comes Mary</li>
+      <li>Blur - Song 2</li>
+      <li>Bryan Adams - The Only Thing That Looks Good On Me Is You</li>
+      <li>Cake - I Will Survive [orig. Gloria Gaynor]</li>
+      <li>Calling - Wherever You Will go</li>
+      <li>Chumbawamba - Tubthumping</li>
+      <li>Chris Isaak - Wicked Game</li>
+      <li>Clash - Should I stay Or Should I Go</li>
+      <li>Climax Blues Band - Couldn't Get It Right</li>
+      <li>Coldplay - Clocks</li>
+      <li class="w3-text-orange">Coldplay - In My Place & The Scientist [Medley] (demo)</li>
+      <li>Crowded House - It's Only Natural</li>
+      <li>Daft Punk - Get Lucky</li>
+      <li>Dandy Warhols - Bohemian Like You</li>
+      <li>Depeche Mode - Never Let Me Down Again</li>
+      <li>Doobie Brothers - Long Train Running</li>
+      <li>Doris Day - Que Sera</li>
+      <li>Eagle Eye Cherry - Save Tonight
+      <li class="w3-text-cyan">Ed Sheeran - Photograph (neu)</li>
+      <li class="w3-text-cyan">Empire of the Sun - We are the People (neu)</li>
+      <li>Faith No More - Easy [orig. Commodores]</li>
+      <li>Falco - Der Kommissar</li>
+      <li>Fastball - The Way</li>
+      <li>Freak Power - Turn On Tune In Cop Out</li>
+      <li>Gary Moore - Walking By Myself</li>
+      <li>Grauzone - Eisb&auml;r</li>
+      <li>Green Day - Basket Case [b]</li>
+      <li>Gun - Word Up [orig. Cameo]</li>
+      <li class="w3-text-orange">HIM - Join Me (demo)</li>
+      <li>INXS - Mystify</li>
+      <li>Isaac Hayes - Shaft</li>
+      <li>Jack Johnson - Good People</li>
+      <li>Jet - Are You Gonna Be My Girl</li>
+      <li>Joe Cocker - You Can Leave Your Hat On</li>
+      <li>Kings of Leon - Sex On Fire</li>
+      <li>KISS - I Was Made For Lovin' You</li>
+      <li>Knack - My Sharona</li>
+      <li>La's - There She Goes</li>
+      <li>Lenny Kravitz - Are You Gonna Go My Way</li>
+      <li>Lenny Kravitz - Fly Away</li>
+      <li>Lenny Kravitz - It Ain't Over 'Til Its Over</li>
+      <li>Limp Bizkit - Take A Look Around</li>
+      <li>Liquido - Narcotic</li>
+      <li>Mando Diao - Dance With Somebody</li>
+      <li>Maroon 5 - Won't Go Home Without You</li>
+      <li>Michael Sembello - Maniac</li>
+      <li>Nick Straker - A Walk In The Park</li>
+      <li>Nirvana - Smells Like Teen Spirit</li>
+      <li>Oasis - Wonderwall</li>
+      <li>Offspring - Pretty Fly For A White Guy</li>
+      <li>Pink Floyd - Another Brick In The Wall</li>
+      <li>Presidents of the USA - Video Killed The Radio Star [orig. Buggles]</li>
+      <li>Proclaimers - I'm Gonna Be / 500 Miles</li>
+      <li>Queens Of The Stone Age - No One Knows</li>
+      <li>Radiohead - Creep</li>
+      <li>Reamonn - Supergirl</li>
+      <li>Rembrandts - Just The Way It Is Baby</li>
+      <li>Rio Reiser - K&ouml;nig Von Deutschland</li>
+      <li>Robbie Williams - Angels</li>
+      <li>Robbie Williams - Let Me Entertain You</li>
+      <li>Santana - Samba Pa Ti</li>
+      <li>Simple Minds - Don't You Forget About Me</li>
+      <li class="w3-text-orange">Smash Mouth - All Star (demo)</li>
+      <li>Smash Mouth - I'm A Believer [orig. Monkees]</li>
+      <li>Smash Mouth - Walking On The Sun</li>
+      <li class="w3-text-cyan">Spider Murphy Gang - Schikeria (neu)</li>
+      <li>Sportfreunde Stiller - Ein Kompliment</li>
+      <li>Stretch - Why Did You Do It</li>
+      <li>Tal Bachman - She's so high</li>
+      <li>Taxiride - Everywhere You Go</li>
+      <li class="w3-text-cyan">Tears For Fears - Everybody Wants To Rule The World (neu)</li>
+      <li>Third eye blind - Semi Charmed Life</li>
+      <li>Tom Jones - Sexbomb</li>
+      <li>Toten Hosen - Tage Wie Diese</li>
+      <li>Toy Dolls - Nelly The Elephant</li>
+      <li>U2 - Beautiful Day</li>
+      <li>U2 - One</li>
+      <li>Wallflowers - Heroes [orig. David Bowie]</li>
+      <li>Wannadies - Blister In The Sun [orig. Violent Femmes]</li>
+      <li>Wheatus - Teenage Dirtbag</li>
+      <li>White Stripes - Seven Nation Army</li>
+      <li>Wild Cherry - Play That Funky Music</li>
+    </ol>
+    <p>
+      Das sind knapp 100 Songs.  Liebe Leute, wenn das nicht ausreicht.
+      <br>
+      Und, wir spielen nix vom Blatt, alles aus'm Kopp, &auml;h, nun ja, also die meisten von uns.
+    </p>
+  </div>
+  </div>
+
+  <!-- PRESSETEXT Section -->
+  <div class="w3-container w3-content w3-center bu-page-padding" style="max-width:700px" id="pressetext">
+    <h2 class="w3-wide">Pressetext</h2>
+    <p class="w3-opacity"><i>The City never sleeps, and the party never ends!</i></p>
+    <p class="w3-justify">
+      Ihr wollt die Top Hits der letzten Jahrzehnte, die jeder kennt, aber
+      nicht von jeder Band gespielt werden? Ganz nah am Original und trotzdem
+      mit eigenem Stil? Eine l&auml;ssige Show und Action, aber auch
+      Gef&uuml;hl und liebenswerter Charme? All das sind keine
+      Gegens&auml;tze, sondern das ist
+      <i><b>beats united</b></i>
+      aus M&uuml;nchen, die Coverband f&uuml;r Pop, Rock, Punk und
+      Independent-Musik und eine ausgelassenene Party mit dem gewissen
+      'Beat'. Unter dem Motto '...and the party never ends' wurden schon
+      viele Abende durch
+      <i><b>beats united</b></i>
+      zum unvergesslichen Ereignis. Kein Wunder, denn bei jedem St&uuml;ck
+      sp&uuml;rt man den Spass, die Musikalit&auml;t und die
+      langj&auml;hrige B&uuml;hnen-Erfahrung der sechs sympathischen Jungs von
+      <i><b>beats united</b></i>
+      . Ob durch die kraftvolle und vielseitige Stimme vom charismatischen
+      Frontman und S&auml;nger
+      <b class="w3-tooltip">Olli<span style="position:absolute;left:26px;" class="w3-text w3-tag">Kley</span></b>
+      , die authentischen Soli von Gitarrist
+      <b class="w3-tooltip">Andi<span style="position:absolute;left:33px;" class="w3-text w3-tag">Urban</span></b>
+      , die pr&auml;zisen 16tel-Licks von Rhythmusgitarrist
+      <b class="w3-tooltip">Jan<span style="position:absolute;left:26px;" class="w3-text w3-tag">Rottsch&auml;fer</span></b>
+      , das au&szlig;ergew&ouml;hnliche Zusammenspiel von Bassist
+      <b class="w3-tooltip">Rainer<span style="position:absolute;left:46px;" class="w3-text w3-tag">Weihrauch</span></b>
+      und Schlagzeuger
+      <b class="w3-tooltip">Karim<span style="position:absolute;left:42px;" class="w3-text w3-tag">Cherkaoui</span></b>
+      und nicht zuletzt das absolute Geh&ouml;r von Keyboarder
+      <b class="w3-tooltip">Ingo<span style="position:absolute;left:33px;" class="w3-text w3-tag">Barsekow</span></b>
+      , die Musiker von beats united garantieren eine 'lange Nacht der Musik', eine heisse Clubshow, viel Spass auf dem Sommer-OpenAir, eine unvergessliche Firmenfeier, eine Messeparty ohne Krawattenzwang oder ganz einfach die "etwas andere" Hochzeit.
+    </p>
+  </div>
+
+  <!-- DEMOS Section -->
+  <div class="bu-ukrain-blue">
+  <div class="w3-container w3-content bu-page-padding" style="max-width:600px" id="demos">
+    <h2 class="w3-wide w3-center">Demos</h2>
+    <p class="w3-justify">
+      Schickt uns einfach eine Nachricht an
+      <a href="mailto:beatsunited@gmx.de" target="_blank">beatsunited@gmx.de</a>
+      , dann versorgen wir euch gerne mit ein paar Demosongs, entweder
+    </p>
+    <ul>
+      <li>
+        <a href="mailto:beatsunited@gmx.de" target="_blank">per Email</a>
+        mit MP3s im Anhang
+      </li>
+      <li>oder per CD mit sch&ouml;nem Booklet</li>
+      <li>oder gleich per Dropbox-Link (bitte auch hier per Email anfordern)</li>
+      <li>
+        oder auch
+        <a href="http://www.youtube.com/user/BeatsUnitedCoverband" target="_blank">hier in unserem Youtube Kanal</a>
+      </li>
+    </ul>
+    <p>... ganz wie ihr wollt.</p>
+    <p>
+      &Uuml;brigens, in
+      <a href="#songs">unserer Songliste weiter oben</a>
+      sind die verf&uuml;gbaren Audio-Demo-Titel gelb markiert.
+    </p>
+  </div>
+  </div>
+
+  <!-- CHRONIK Section -->
+  <div class="w3-container w3-content bu-page-padding" style="max-width:800px" id="chronik">
+    <h2 class="w3-wide w3-center">Chronik</h2>
+    <h4 class="bu-ukrain-blue-text">2 Phasen</h4>
+    <p>Wenn man unseren Bandnamen zu Grunde legt gibt es zwei Phasen:</p>
+    <p>die <i class="w3-padding-small">"binaural beat"</i> Zeit und die <i class="w3-padding-small">"beats united"</i> Zeit.</p>
+    <ul>
+      <li>binaural beat: 1997 bis 2006</li>
+      <li>beats united:  2006 bis heute</li>
+    </ul>
+    <h4 class="bu-ukrain-blue-text">Aktuelle Besetzung (alphabetisch)</h4>
+    <ul>
+      <li>Andi (git, voc)</li>
+      <li>Ingo (keys, voc)</li>
+      <li>Jan (git, voc)</li>
+      <li>Karim (drums)</li>
+      <li>Ray (bass)</li>
+      <li>Tex (vocals)</li>
+    </ul>
+    <h4 class="bu-ukrain-blue-text">Stamm Besetzung - Main Staff</h4>
+    <p>Seit 1997 quasi immer dabei:</p>
+    <ul>
+      <li>RAINER (Ray) WEIHRAUCH - Bassist und Edel-Techniker</li>
+      <li>JAN ROTTSCH&Auml;FER - Gitarrist, Background Gesang</li>
+      <li>ANDREAS (Andi) URBAN - Lead Gitarrist, Background Gesang</li>
+    </ul>
+    <p>
+      Jan und Rainer haben sich schon 1-2 Jahre zuvor zusammengetan.
+      <br>
+      Jan hat zwischendurch mal kurz f&uuml;r ca. 2 Jahre eine Schaffenspause
+      eingelegt und ist 2004 wieder voll durchgestartet.
+    </p>
+    <h4 class="bu-ukrain-blue-text">Gesang - Lead Vocals</h4>
+    <p class="w3-justify">
+      J&Ouml;RG MAIR war bis 2002 unser erste Stimme.
+      Er konzertriert sich seither voll auf seine Solokarriere.
+      <br>
+      Abgel&ouml;st wurde er von OLIVER (Tex) KLEY,
+      der seitdem die Massen mit seiner Bono-Stimme bet&ouml;rt.
+    </p>
+    <h4 class="bu-ukrain-blue-text">Tasten - Keyboards</h4>
+    <ul>
+      <li>EDWARD (Eddie) RENNER (bis 2002)</li>
+      <li>HOLGER GUMBRECHT (bis 2004)</li>
+      <li>INGO BARSEKOW (seit 2004 bis heute)</li>
+    </ul>
+    <p class="w3-justify">
+      INGO hat Ende 2017 leider der Live Musik den R&uuml;cken gekehrt,
+      blieb aber weiterhin ein wichtiger Bestandteil der Band.
+      <br>
+      ABER, er hat sich Ende 2018 erbarmt und ist zu unserem Gl&uuml;ck
+      wieder in die Band eingestiegen. Uff, Gl&uuml;ck gehabt!
+    </p>
+    <h4 class="bu-ukrain-blue-text">Schlagzeug - Drummer</h4>
+    <p>
+      Ein gro&szlig;es Feld ! 
+      <br><br>
+      ALBERT K&Ouml;NIGER war von Beginn an das Tier an den Trommeln
+      und wurde 2002 von JOACHIM (Joe) BOLTE abgel&ouml;st.
+      <br><br>
+      Da Joe berufsbedingt (Tourneen) immer wieder mal aussetzen musste,
+      kamen wiederholt Nachwuchstalente aus seinem Schlagzeugunterricht
+      zum Einsatz, wie z.B. 2011 und 2012
+      VINCENT CRUSIUS, der mittlerweile erfolgreich Musik studiert hat.
+      <br><br>
+      Ein weiterer Sch&uuml;ler von Joe war
+      KARIM CHERKAOUI, der seit 2017 unser sprichw&ouml;rtlicher
+      Groovemaster an den Drums ist, der einzige uns bekannte Schlagzeuger,
+      der sein Instrument nicht schl&auml;gt !!
+      <br><br>
+      VOLKER EXNER m&ouml;chten wir nicht vergessen zu erw&auml;hnen,
+      der uns bei 1-2 Gigs 2009 ausgeholfen hat.
+      <br><br>
+      Ausserdem hilft uns auch immer wieder gerne bei Proben
+      SIMON DANNER und
+      THOMAS PENKLER von AUSTRIA PROJECT
+      aus, da gef&uuml;hlt 5 Drummer einfach nicht reichen.
+    </p>
+    <h4 class="bu-ukrain-blue-text">Gitarre - Guitars</h4>
+      <p class="w3-justify">
+        I KETUT GUNAWAN aus Malaysia hat von 1999 - 2001 die Saiten
+        gezupft und auch nebenbei noch Keyboard gespielt.
+        <br><br>
+        PATRICK WILLE hat anschliessend bis 2003 an eben den gleichen
+        Instrumenten das Bandgef&uuml;ge erweitert mit Schwerpunkt Gitarre.
+        <br><br>
+        2010 fiel der Geburtstermin von Andis Sohn Michael mit einem
+        wichtigen Gig-Termin zusammen, sodass wir uns Hilfe vom leider
+        mittlerweile verstorbenen
+        STEFAN ARDEN (geb. HUBER) geholt haben.
+      </p>
+    <h4 class="bu-ukrain-blue-text">Licht - Lightshow</h4>
+    <ul>
+      <li>ANDREAS HOENIG (2004 - 2005)
+      <li>MARTIN EPPLER (2003 - 2004)
+    </ul>
+    <p>Seither, also nach 2004 hat S&auml;nger Olli (Tex) das Licht-Heft fest in der Hand.</p>
+    <h4 class="bu-ukrain-blue-text">Ton - Audio, DJ, PA, FOH</h4>
+    <ul>
+      <li>CHRISTIAN HERMENTIN (2003 - 2006)</li>
+      <li>PETER GRENZMANN (2012)</li>
+    </ul>
+    <p>
+      Was also die gesamte B&uuml;hnentechnik betrifft versorgen wir uns seit Langem selbst.
+      Haupts&auml;chlich zaubern dann Rainer (PA-Technik), Ingo (FOH) und Olli (Lightshow).
+      Unsere Hardware kann so ziemlich alles bis hin zur Dreifach-Turnhalle beschallen.
+      Au&szlig;er bei gro&szlig;en Veranstaltungen, Olympia-Stadion u.&auml;.
+      da holen wir uns nat&uuml;rlich dann extern Hilfe.
+    </p>
+    <h4 class="bu-ukrain-blue-text">Helfer - Hands</h4>
+    <ul>
+      <li>LEO KLOTCHKOV (2009)</li>
+      <li>YEVGEN RYEZNIKOV (2011)</li>
+      <li>JENS KUCKELKORN (2014)</li>
+      <li>DOMINIK SCHUSTER (2018/2019)</li>
+      <li>MAXI BETZ (2018/2019)</li>
+    </ul>
+    <h4 class="bu-ukrain-blue-text">Fotografen - Pictures</h4>
+    <ul>
+      <li>GUIDO KROPP (2001)
+      <li>MARKUS MORODER (2005)
+      <li>JENS KUCKELKORN (2014)
+    </ul>
+    <h4 class="bu-ukrain-blue-text">Transport</h4>
+    <ul>
+      <li>CHRISTIAN FIEDERER (2002 - 2005)</li>
+      <li>ATTILA DAUER (2003)</li>
+    </ul>
+    <h4 class="bu-ukrain-blue-text">Proberaum - Rehearsal Studio</h4>
+    <p>
+      Vom Anbeginn aller Zeiten probten wir im Keller der
+      <a href="http://www.ohrwurmmusic.de/" target="_blank">Musikschule OHRWURM</a>
+      in der Elsenheimer Stra&szlig;e, M&uuml;nchen.
+      <br><br>
+      Seit Februar 2019 proben wir in Germering beim Enggruber,
+      wo wir zu Gast im Proberaum von
+      <a href="http://www.austriaproject.com" target="_blank">Austria Project</a>
+      sind.
+    </p>
+  </div>
+
+  <!-- KONTAKT Section -->
+  <div class="bu-ukrain-blue">
+  <div class="w3-container w3-content bu-page-padding bu-ukrain-blue" style="max-width:800px" id="kontakt">
+    <h2 class="w3-wide w3-center">Kontakt</h2>
+    <p class="w3-opacity w3-center"><i>Fragen?</i></p>
+    <p class="w3-opacity w3-center">Einfach anrufen!</p>
+    <p class="w3-center"> <i class="fa fa-phone" style="width:30px"></i>Phone: +49 170 1822738</p>
+    <br>
+    <p class="w3-opacity w3-center">oder schreibt uns..</p>
+    <p class="w3-center"> <i class="fa fa-envelope" style="width:30px"></i>Email: <a href="mailto:beatsunited@gmx.de" target="_blank">beatsunited@gmx.de</a></p>
+  </div>
+  </div>
+
+  <!-- LINKS Section -->
+  <div class="w3-container w3-content bu-page-padding" style="max-width:700px" id="links">
+    <h2 class="w3-wide w3-center">Links</h2>
+    <h3 class="bu-ukrain-blue-text">Bands</h3>
+    <a href="http://www.youtube.com/user/BeatsUnitedCoverband" target="_blank">bu@youtube</a> - beats united youtube channel
+    <br>
+    <a href="http://www.austriaproject.com" target="_blank">Austria Project</a> - Unsere Nachbarn im Proberaum mit feinstem &Ouml;si-Repertoire
+    <h3 class="bu-ukrain-blue-text">Partner</h3>
+    <a href="http://www.bmc-music.com/" target="_blank">BMC</a> - BMC Musik Produktion
+    <br>
+    <a href="http://www.transporte-fiederer.de/" target="_blank">FIEDERER</a> - Transportunternehmen
+    <br>
+    <a href="http://www.ohrwurmmusic.de/" target="_blank">OHRWURM</a> - Musikschule M&uuml;nchen
+    <h3 class="bu-ukrain-blue-text">Sonstige</h3>
+    <a href="http://www.festlguide.de" target="_blank">FESTLGUIDE</a> - Veranstaltungsinfos
+    <br>
+    <a href="http://www.hochzeitssaengerin.org" target="_blank">HOCHZEITSS&Auml;NGERIN</a> - Suchb&ouml;rse
+    <br>
+    <a href="http://www.thomann.de" target="_blank">THOMANN</a> - Musik Online Shop
+    <h3 class="bu-ukrain-blue-text">Credits</h3>
+    <a href="mailto:jens-kuckelkorn@web.de" target="_blank">Jens</a> - Live Media Pics/Videos
+  </div>
+
+  <!-- IMPRESSUM Section -->
+  <div class="w3-dark-gray" id="impressum">
+    <div class="w3-container w3-content w3-medium bu-page-padding" style="max-width:700px">
+    <h2 class="w3-wide w3-center">Impressum / Disclaimer</h2>
+    <p>Angaben gem&auml;ß &#xa7; 5 TMG</p>
+    <h4>Verantwortungsbereich</h4>
+    <p>
+      Das Impressum gilt nur f&uuml;r die Internetpr&auml;senz der Adresse
+      <br>
+      beatsunited.de
+    </p>
+    <!-- MStV = Medienstaatsvertrag -->
+    <h6>Verantwortlich f&uuml;r den Inhalt nach &#xa7; 18 Abs. 2 MStV</h6>
+    <p>
+      Andreas Urban
+      <br>
+      Johann-Baptist-Lethner-Str. 14
+      <br>
+      D-85465 Langenpreising
+      <br>
+      andi.urban(at)gmx.net
+    </p>
+    <h4>Haftungsausschluss</h4>
+    <h6>Haftung f&uuml;r Inhalte</h6>
+    <p class="w3-justify">
+      Die Inhalte unserer Seiten wurden mit gr&ouml;&szlig;ter Sorgfalt erstellt.
+      F&uuml;r die Richtigkeit, Vollst&auml;ndigkeit und Aktualit&auml;t der Inhalte k&ouml;nnen wir jedoch keine Gew&auml;hr &uuml;bernehmen.
+      Als Diensteanbieter sind wir gem&auml;&szlig; &#xa7; 7 Abs.1 TMG f&uuml;r eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
+      Nach &#xa7;&#xa7; 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, &uuml;bermittelte oder gespeicherte fremde Informationen zu &uuml;berwachen oder nach Umst&auml;nden zu forschen, die auf eine rechtswidrige T&auml;tigkeit hinweisen.
+      Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unber&uuml;hrt.
+      Eine diesbez&uuml;gliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung m&ouml;glich.
+      Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+    </p>
+    <h6>Haftung f&uuml;r Links</h6>
+    <p class="w3-justify">
+      Unser Angebot enth&auml;lt Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben.
+      Deshalb k&ouml;nnen wir f&uuml;r diese fremden Inhalte auch keine Gew&auml;hr &uuml;bernehmen.
+      F&uuml;r die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+      Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf m&ouml;gliche Rechtsverst&ouml;&szlig;e &uuml;berpr&uuml;ft.
+      Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar.
+      Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar.
+      Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+    </p>
+    <h6>Urheberrecht</h6>
+    <p class="w3-justify">
+      Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht.
+      Die Vervielf&auml;ltigung, Bearbeitung, Verbreitung und jede Art der Verwertung au&szlig;erhalb der Grenzen des Urheberrechtes bed&uuml;rfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+      Downloads und Kopien dieser Seite sind nur f&uuml;r den privaten, nicht kommerziellen Gebrauch gestattet.
+      Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet.
+      Insbesondere werden Inhalte Dritter als solche gekennzeichnet.
+      Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis.
+      Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+    </p>
+    <h6>Datenschutz</h6>
+    <p class="w3-justify">
+      Die Nutzung unserer Webseite ist in der Regel ohne Angabe personenbezogener Daten m&ouml;glich.
+      Soweit auf unseren Seiten personenbezogene Daten (beispielsweise Name, Anschrift oder eMail-Adressen) erhoben werden, erfolgt dies, soweit m&ouml;glich, stets auf freiwilliger Basis.
+      Diese Daten werden ohne Ihre ausdr&uuml;ckliche Zustimmung nicht an Dritte weitergegeben.
+    </p>
+    <p class="w3-justify">
+      Wir weisen darauf hin, dass die Daten&uuml;bertragung im Internet (z.B. bei der Kommunikation per E-Mail) Sicherheitsl&uuml;cken aufweisen kann.
+      Ein l&uuml;ckenloser Schutz der Daten vor dem Zugriff durch Dritte ist nicht m&ouml;glich.
+    </p>
+    <p class="w3-justify">
+      Der Nutzung von im Rahmen der Impressumspflicht ver&ouml;ffentlichten Kontaktdaten durch Dritte zur &Uuml;bersendung von nicht ausdr&uuml;cklich angeforderter Werbung und Informationsmaterialien wird hiermit ausdr&uuml;cklich widersprochen.
+      Die Betreiber der Seiten behalten sich ausdr&uuml;cklich rechtliche Schritte im Falle der unverlangten Zusendung von Werbeinformationen, etwa durch Spam-Mails, vor.
+    </p>
+    </div>
+  </div>
+
+  <div class="w3-black" id="logo">
+    <div class="w3-container w3-center w3-content bu-page-padding">
+      <h2 class="w3-wide">Official Band Logo</h2>
+      <p>
+        <img src="beats_united_logo_800x600.png" class="w3-round w3-margin-bottom w3-image" alt="beats united bandlogo">
+      </p>
+    </div>
+  </div>
+<!-- End Page Content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-16 w3-center bu-orange">
+  <p class="w3-large">
+    hope see you soon ...
+  </p>
+  <p class="w3-small">
+    last update 22.03.2022
+    <br>
+    powered by w3
+  </p>
+</footer>
+
+</body>
+</html>
