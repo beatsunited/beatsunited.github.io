@@ -13,7 +13,7 @@ TXT | beatsunited.de                      | v=spf1 -all
 TXT | _github-pages-challenge-beatsunited | 1dce0d422cc4526d1a4f65d25f3968
 
 Saved it here cuz unsure about it, don't remember if it was alphahosting or Cloudflare settings!  
-The last one is for sure Cloudflare, but I think it's only initially needed.
+The last one for sure is Github, but I think it's only initially needed.
 
 
 NO, these records except the last one you can let Cloudflare create
