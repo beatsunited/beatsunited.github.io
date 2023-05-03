@@ -39,7 +39,7 @@ var imagegap = empty;
 
 a_href = '<a href="';
 a_href_end = '></a>';
-slideshow_folder = "pics_for_slideshow/";
+slideshow_folder = "slideshow/";
 
 image_filenames = [
   "2003_Schwabinger_Altstadtfest.jpg",
