@@ -45,8 +45,8 @@ with doc.body:
       # table main content
       for f in files:
         date = re.sub(regex, regex_date, f)
-        city = re.sub(regex, regex_city, f)
-        location = re.sub(regex, regex_location, f)
+        city = re.sub(regex, regex_city, f).replace('-', ' ')
+        location = re.sub(regex, regex_location, f).replace('-', ' ')
         event = re.sub(regex, regex_event, f).replace('-', ' ')
         download = re.sub(regex, regex_suffix, f)
         tr(
