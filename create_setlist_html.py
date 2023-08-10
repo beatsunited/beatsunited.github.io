@@ -17,6 +17,7 @@ import re
 
 # 3rd party modules
 import dominate
+from dominate.util import raw
 from dominate.tags import *
 
 
@@ -63,6 +64,15 @@ def get_args():
   return parser.parse_args()
 
 
+# defs
+#======== ========= ========= ========= ========= ========= ========= =========
+def fu_blanks(a_cnt=3):
+  for i in range(a_cnt):
+    raw('&nbsp;')
+  raw('-')
+  for i in range(a_cnt):
+    raw('&nbsp;')
+
 # start
 #======== ========= ========= ========= ========= ========= ========= =========
 args = get_args()
@@ -77,6 +87,13 @@ with doc.head:
 with doc.body:
   attr(cls='w3-sans-serif w3-large bu-ukrain-yellow')
   with div(cls='w3-container'):
+    # links
+    with p(__pretty=False):
+      attr(cls='w3-large')
+      a('beatsunited.de', target='blank', title='Band Website', href='https://beatsunited.de')
+      fu_blanks()
+      a('Songs Repertoire', target='blank', title='Artist, Song, BPM, time, etc.', href='https://docs.google.com/spreadsheets/d/1TzAiBhRINhIhF9fQB6d2GYXMYb055AujHxAAVYXFovQ/edit?usp=drive_link')
+
     with table():
       attr(cls='w3-table w3-bordered w3-hoverable w3-amber')
       # table header
@@ -106,13 +123,6 @@ with doc.body:
           td(a(download, href=f'setlists/{f}', target='_blank'), __pretty=False),
           __pretty=False
         )
-    # footer links
-    with p(__pretty=False):
-      attr(cls='w3-xlarge w3-center')
-      a('beatsunited.de', target='blank', href='https://beatsunited.de')
-    with p(__pretty=False):
-      attr(cls='w3-xlarge w3-center')
-      a('Repertoire', target='blank', href='https://docs.google.com/spreadsheets/d/1TzAiBhRINhIhF9fQB6d2GYXMYb055AujHxAAVYXFovQ/edit?usp=drive_link')
 
 logging.debug(doc)
 logging.info(f"{type(doc)}")
