@@ -11,6 +11,18 @@
  padding-bottom:67px!important;
 }
 
+.bu-body{
+ color:#fc0;
+ background-color:#111;
+}
+.bu-orange{
+ color:#333;
+ background-color:#fa0;
+}
+.bu-yellow{
+ color:#333;
+ background-color:#fc0;
+}
 .bu-green{
  color:#000;
  background-color:#0c4;
@@ -18,10 +30,6 @@
 .bu-blue{
  color:#007;
  background-color:#06c;
-}
-.bu-orange{
- color:#f90;
- background-color:#333;
 }
 
 .bu-blue-text{
