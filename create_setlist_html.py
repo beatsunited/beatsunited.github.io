@@ -36,7 +36,7 @@ files = sorted(files_list)
 doc = dominate.document(title='beats united setlists')
 
 HOME_DIR = os.path.expanduser('~')
-WEB_DIR = f"{HOME_DIR}/git/beatsunited/website"
+WEB_DIR = f"{HOME_DIR}/git/agu/beatsunited/website"
 HTML_FILE = f"{WEB_DIR}/setlists_created.html"
 
 regex = r"([0-9]{4})([0-9]{2})([0-9]{2})_bu_setlist_(.+)_(.+)_(.+)\.(.*)"
@@ -90,7 +90,7 @@ with doc.body:
     # links
     with p(__pretty=False):
       attr(cls='w3-large')
-      a('beatsunited.de', target='blank', title='Band Website', href='https://beatsunited.de')
+      a('beatsunited.de', target='blank', title='Band Website', href='../website/index.html')
       fu_blanks()
       a('Songs Repertoire', target='blank', title='Artist, Song, BPM, time, etc.', href='https://docs.google.com/spreadsheets/d/1TzAiBhRINhIhF9fQB6d2GYXMYb055AujHxAAVYXFovQ/edit?usp=drive_link')
 
