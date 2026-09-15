@@ -21,8 +21,7 @@ from dominate.util import raw
 from dominate.tags import *
 
 
-# vars
-#======== ========= ========= ========= ========= ========= ========= =========
+# -------------------------- Vars -----------------------------------
 extensions = (
   '*.jpg',
   '*.pdf',
@@ -32,11 +31,12 @@ files_list = []
 for ext in extensions:
   files_list.extend(glob.glob(ext))
 files = sorted(files_list)
+print(f"{files=}")
 
 doc = dominate.document(title='beats united setlists')
 
 HOME_DIR = os.path.expanduser('~')
-WEB_DIR = f"{HOME_DIR}/git/agu/beatsunited/website"
+WEB_DIR = f"{HOME_DIR}/git/agu/github/bu_website"
 HTML_FILE = f"{WEB_DIR}/setlists_created.html"
 
 regex = r"([0-9]{4})([0-9]{2})([0-9]{2})_bu_setlist_(.+)_(.+)_(.+)\.(.*)"
@@ -46,9 +46,7 @@ regex_location = r"\5"
 regex_event = r"\6"
 regex_suffix = r"\7"
 
-
-# args
-#======== ========= ========= ========= ========= ========= ========= =========
+# -------------------------- Arguments ------------------------------
 def get_args():
   parser = argparse.ArgumentParser(
     formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -63,9 +61,7 @@ def get_args():
   parser.add_argument('-Y', '--Run', '--Doit', action='store_true', default=False, help='really do something')
   return parser.parse_args()
 
-
-# defs
-#======== ========= ========= ========= ========= ========= ========= =========
+# -------------------------- Functions ------------------------------
 def fu_blanks(a_cnt=3):
   for i in range(a_cnt):
     raw('&nbsp;')
@@ -73,8 +69,7 @@ def fu_blanks(a_cnt=3):
   for i in range(a_cnt):
     raw('&nbsp;')
 
-# start
-#======== ========= ========= ========= ========= ========= ========= =========
+# -------------------------- Start ----------------------------------
 args = get_args()
 if args.loglevel is not None:
   logging.basicConfig(level=args.loglevel)
@@ -90,7 +85,7 @@ with doc.body:
     # links
     with p(__pretty=False):
       attr(cls='w3-large')
-      a('beatsunited.de', target='blank', title='Band Website', href='../website/index.html')
+      a('beatsunited.de', target='blank', title='Band Website', href='../bu_website/index.html')
       fu_blanks()
       a('Songs Repertoire', target='blank', title='Artist, Song, BPM, time, etc.', href='https://docs.google.com/spreadsheets/d/1TzAiBhRINhIhF9fQB6d2GYXMYb055AujHxAAVYXFovQ/edit?usp=drive_link')
 
