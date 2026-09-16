@@ -88,6 +88,8 @@ with doc.body:
       a('beatsunited.de', target='blank', title='Band Website', href='../bu_website/index.html')
       fu_blanks()
       a('Songs Repertoire', target='blank', title='Artist, Song, BPM, time, etc.', href='https://docs.google.com/spreadsheets/d/1TzAiBhRINhIhF9fQB6d2GYXMYb055AujHxAAVYXFovQ/edit?usp=drive_link')
+      fu_blanks()
+      raw(f"{len(files)} files")
 
     with table():
       attr(cls='w3-table w3-bordered w3-hoverable w3-amber')
