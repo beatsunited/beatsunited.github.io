@@ -1,9 +1,21 @@
+html, body {
+  box-sizing: border-box;
+  overflow-x: hidden; /* Verhindert das nervige seitliche Herausrutschen auf Smartphones */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .tr-hover{
  background-color: yellow;
 }
 
 .mySlides{
  display: none;
+}
+
+.bu-text-width{
+ max-width: 767px;
 }
 
 .bu-page-padding{
